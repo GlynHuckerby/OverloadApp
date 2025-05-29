@@ -1,2 +1,3 @@
 # OverloadApp
-Gym progress tracking application
+
+Gym progresssive overload tracking application.
