@@ -1,14 +1,11 @@
 import React from 'react';
-import { GluestackUIProvider } from "@gluestack-ui/themed";
 import { NavigationContainer } from '@react-navigation/native';
-import BottomTabNavigator from './src/navigation/BottomTabNavigator';
+import RootNavigator from '@/src/navigation/RootNavigator';
 
 export default function App() {
   return (
-    <GluestackUIProvider>
-      <NavigationContainer>
-        <BottomTabNavigator/>
-      </NavigationContainer>
-    </GluestackUIProvider>
+    <NavigationContainer>
+      <RootNavigator/>
+    </NavigationContainer>
   );
 };

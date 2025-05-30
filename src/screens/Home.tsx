@@ -1,10 +1,24 @@
 import React from "react";
-import { View, Text } from 'react-native';
+import { Box } from "@/components/ui/box";
+import { VStack } from "@/components/ui/vstack";
+import { Heading } from "@/components/ui/heading";
+import { Input, InputField } from "@/components/ui/input";
+import { Button, ButtonText } from "@/components/ui/button";
+import { Text } from "@/components/ui/text";
+import ChartPlaceholder from '../components/ChartPlaceholder';
 
 export default function Home() {
-    return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>Home Screen</Text>
-        </View>
-    );
-};
+    return(
+        <Box className="flex-1 p-4">
+            <VStack space="lg">
+                <Heading size="md">Welcome to Overload</Heading>
+
+                <Button onPress={() => {}}>
+                    <ButtonText>Start Programmed Session</ButtonText>
+                </Button>
+
+                <ChartPlaceholder/>
+            </VStack>
+        </Box>
+    )
+}
